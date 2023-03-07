@@ -193,11 +193,9 @@ class Tree
         elsif (value == node.data)
             puts "#{value} = #{node.data}"
         elsif (value < node.data)
-            # puts "#{value} is less than #{node.data}"
             array << node.data
             depth(value, node.left, array)
         elsif (value > node.data)
-            # puts "#{value} is greater than #{node.data}"
             array << node.data
             depth(value, node.right, array)
         end
@@ -211,10 +209,8 @@ class Tree
         true_difference = difference.abs
         puts "true difference: #{true_difference}"
         if true_difference <= 1
-            # puts "tree is balanced"
             return true
         elsif true_difference > 1
-            # puts "tree is not balanced"
             return false
         end
     end
